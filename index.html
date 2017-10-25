@@ -10,7 +10,7 @@
     <form id="sample_form">
       <fieldset>
         <label for="first">first name:</label>
-          <input type="text" name="first" placeholder="enter first name" required>
+          <input type="text" name="first" placeholder="enter first name" minLength="6" required>
       </fieldset>
       <fieldset>
         <label for="last">last name:</label>
@@ -20,10 +20,11 @@
         <label for="enrolled">Currently Enrolled:</label>
           <input type="checkbox" name="enrolled" value="enrolled">
       </fieldset>
-      <label for="future_classes">Interested in future classes:</label>
+      <fieldset>
+        <label for="future_classes">Interested in future classes:</label>
         <input type="radio" name="future_classes" value="no">yes
         <input type="radio" name="future_classes" value="no">no
-    </fieldset>
+      </fieldset>
 
     <button id="submit_btn" type="submitt">Add Students</button>
     </form>
