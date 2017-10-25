@@ -6,6 +6,38 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- content goes here -->
+    <form id="sample_form">
+      <fieldset>
+        <label for="first">first name:</label>
+          <input type="text" name="first" placeholder="enter first name" required>
+      </fieldset>
+      <fieldset>
+        <label for="last">last name:</label>
+          <input type="text" name="last" placeholder="enter last name" required>
+      </fieldset>
+      <fieldset>
+        <label for="enrolled">Currently Enrolled:</label>
+          <input type="checkbox" name="enrolled" value="enrolled">
+      </fieldset>
+      <label for="future_classes">Interested in future classes:</label>
+        <input type="radio" name="future_classes" value="no">yes
+        <input type="radio" name="future_classes" value="no">no
+    </fieldset>
+
+    <button id="submit_btn" type="submitt">Add Students</button>
+    </form>
+    <section id="students">
+    <table>
+      <thead>
+        <th>first name</th>
+        <th>last name</th>
+        <th>enrolled</th>
+        <th>intereested</th>
+      </thead>
+      <tbody id="student_table">
+      </tbody>
+    </table>
 
     <script type="text/javascript" src="app.js"></script>
   </body>
